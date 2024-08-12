@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "carrefour_backend": {
+      "main": "src/carrefour_backend/main.mo",
+      "type": "motoko"
+    },
+    "carrefour_frontend": {
+      "dependencies": [
+        "carrefour_backend"
+      ],
+      "source": [
+        "src/carrefour_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "carrefour_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
